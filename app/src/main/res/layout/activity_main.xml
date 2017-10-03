@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#b73bdfea"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.numberguess.MainActivity">
+
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Welcome To the Game."
+        android:textSize="30dp" />
+    <TextView
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your guessed Number"
+        android:layout_marginTop="75dp"
+        android:textSize="25dp"
+        android:id="@+id/answer"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/user"
+        android:textColor="#000"
+        android:hint="Please enter between 0 and 5."
+        android:layout_marginTop="79dp"
+        android:layout_below="@+id/answer"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_above="@+id/click"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="64dp" />
+    <Button
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="Click Here "
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
